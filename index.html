@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <div class="header">
+            <p class="logo">MOUSTACHE REPUBLIC</p>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">
+                <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span>0</span></div>
+            </button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span><br><br>
+                <!-- START CART CONTENTSSS  -->
+                <p>
+                        <div class="sidebar">
+                            <div class="head"><p>My Cart</p></div>
+                            <div id="cartItem">Your cart is empty</div>
+                            <!-- <div id="test"></div> -->
+                            <!-- Placeholder to display the data -->
+                            <div id="modalData"></div>
+                            <div class="foot">
+                                <h3>Total</h3>
+                                <h2 id="total">$ 0.00</h2>
+                            </div>
+                        </div>
+                </p>
+            
+                <!-- END CART CONTENTS -->
+              </div>
+            </div>
+    </div>
+
+    <!-- Product Details-->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img src="\C:\Users\kylle\OneDrive\Desktop\MoustacheRepublic\images\classic-tee.JPG" alt="classic-tee" width="100%";>
+            </div>
+            <div class="column">
+              <h1 id="dataElement1">Classic Tee</h1><br>
+              <h1 id ="dataElement2">$75.00</h1><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p><br>
+                <div>
+                    <p class="inline-p">SIZE <span style="color: #C90000">*</span></p>
+                    <p id="size_output" class="inline-p inline-p_bold">...</p>
+                    
+                    <div id="size_output">
+                        <button id="button_S" class="button5" value="S">S</button>
+                        <button id="button_M" class="button5" value="M">M</button>
+                        <button id="button_L" class="button5" value="L">L</button>
+                    </div>
+                    <!-- Button to trigger data collection and processing -->
+                    <button class="button5 add-to-cart-btn" id="transferDataBtn">ADD TO CART</button>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+<!-- run on load/reset -->
+<script src="main.js"></script>
+
+</body>
+</html>

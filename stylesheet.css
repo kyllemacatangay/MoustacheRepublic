@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'century gothic';
+    font-size: 18px;
+    color: #222222;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* topnav header style */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: lightgray;
+    border-radius: 3px;
+    margin: 30px  0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* container */
+.container {
+    background-color: lightgrey;
+    width: 55%;
+    border: 2px solid #CCCCCC;
+    padding: 5px;
+  }
+
+  /* style for size selection */
+.size-select{
+    float: left;
+    width: 33%;
+    padding: 5px;
+    margin: 5px;
+  }
+
+.button {
+    border: none;
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition-duration: 0.2s;
+  }
+  
+.button5:hover {
+    background-color: #555555;
+    color: white;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #222222 ; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #F6F6F7;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* inside cart style  */
+  .head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.inline-p {
+    display: inline;
+    margin-right: 5px; /* Optional: Add some space between the paragraphs */
+}
+
+.inline-p_bold{
+    font-weight: bold;
+}
